@@ -1,5 +1,7 @@
 # 🏋️ Precision Strength Co
 
+**Note:** This is a fictional company created for educational and portfolio purposes.
+
 A professional, responsive institutional website for a fictional fitness company. This project was developed to apply and solidify Front-End concepts learned through the **freeCodeCamp** CSS curriculum.
 
 ## 🎯 Project Goals
@@ -19,6 +21,11 @@ The main focus was to build a clean, accessible, and high-performance website fr
 - **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
 - **Interactive Theme:** Switch between Light and Dark mode.
 - **Clean Forms:** User-friendly contact and inquiry forms.
+
+## 🤖 AI and Assets Disclosure
+To create a realistic visual experience, some assets in this project were generated or sourced using Artificial Intelligence:
+- **Images:** Backgrounds and training scenes were generated using **Llama 4** (Image Gen) or similar models.
+- **Portraits:** The founder's image was sourced from **This Person Does Not Exist**, ensuring privacy and original content.
 
 ## 📝 Credits
 Developed by **Pedro Bonetti** as a portfolio project inspired by the [freeCodeCamp CSS Course](https://youtu.be/OXGznpKZ_sA?si=MVceWAejuxoFQcR0).
