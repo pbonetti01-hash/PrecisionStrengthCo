@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Bonetti">
+    <meta name="description" content="Contact Precision Strength Co for memberships, coaching, and support.">
+    <title>Precision Strength Co | Contact Us</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Precision Strength Co</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" title="Alternar Tema">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="images/img_4.png" alt="contact us background blue" 
+            title="Contact Us" width="1000" height="667">
+            <figcaption class="offset">
+                The customer is always right.
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article class="main__article contact">
+            <h2 class="contact__h2">Contact Us</h2>
+
+            <p class="contact__p">
+                Have questions about our programs, memberships, or coaching sessions?
+                Fill out the form below and our team will respond within 24 business hours.
+            </p>
+
+            <address>
+                <strong>Precision Strength Co</strong><br>
+                245 Iron Street<br>
+                Dallas, TX 75201<br>
+                United States
+            </address>
+
+            <p class="contact__p">
+                <strong>Phone:</strong> 
+                <a href="tel:+12145550189">(214) 555-0189</a>
+            </p>
+
+            <p class="contact__p">
+                <strong>Email:</strong> 
+                <a href="mailto:info@precisionstrengthco.com">
+                    info@precisionstrengthco.com
+                </a>
+            </p>
+
+            <hr>
+
+            <form action="#" method="post" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend>Send Us a Message</legend>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Full Name:</label><br>
+                        <input class="contact__input" type="text" name="name" id="name" required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email Address:</label><br>
+                        <input class="contact__input" type="email" name="email" id="email" required>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="phone">Phone (Optional):</label><br>
+                        <input class="contact__input" type="tel" name="phone" id="phone">
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="subject">Subject:</label><br>
+                        <select class="contact__select" name="subject" id="subject">
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="coaching">Personal Coaching</option>
+                            <option value="support">Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p class="contact__p">
+                        <label class="contact__label" for="message">Your Message:</label><br>
+                        <textarea class="contact__textarea" name="message" id="message" rows="5" required></textarea>
+                    </p>
+
+                    <p class="contact__p">
+                        <button class="contact__button" type="submit">Submit Message</button>
+                        <button class="contact__button" type="reset">Clear Form</button>
+                    </p>
+                </fieldset>
+            </form>
+
+            <p class="contact__p">
+                Train with purpose. Contact us today.
+            </p>
+
+        </article>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <p>
+            <span class="nowrap">Copyright &copy; 2026</span>
+            <span class="nowrap">Precision Strength Co</span> 
+            All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            html.classList.add('dark-mode');
+            btn.textContent = '☀️';
+        }
+
+        btn.addEventListener('click', () => {
+            html.classList.toggle('dark-mode');
+            const isDark = html.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            btn.textContent = isDark ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

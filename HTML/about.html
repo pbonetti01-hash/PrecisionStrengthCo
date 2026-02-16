@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Bonetti">
+    <meta name="description" content="About the Precision Strength Co">
+    <title>About Us | Precision Strength Co</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Precision Strength Co</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#menu">Plans</a></li>
+                <li><a href="hours.html">Hours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" title="Alternar Tema">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <figure>
+            <img src="images/img_2.png" alt="a man balancing with weight" 
+            title="balancing with weight" width="1000" height="667">
+            <figcaption class="offset">
+                Improve your balance
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <article id="about" class="main__article about">
+
+            <h2>About <abbr title="Precision Strength Co">PSC</abbr></h2>
+
+            <p>
+                Founded in <time datetime="2015">2015</time>, 
+                <abbr title="Precision Strength Co">PSC</abbr> was built on a simple principle:
+                <strong>strength without control is incomplete</strong> — 
+                and control without strength is limiting.
+            </p>
+
+            <p>
+                What started as a small performance-focused training space evolved into a 
+                structured strength development center committed to measurable results.
+                Discipline first. Intensity second. Ego never.
+            </p>
+
+            <hr>
+
+            <h3>Our Founder</h3>
+
+            <figure class="about__founder">
+                <img src="images/founder.jpeg" 
+                    alt="Founder of Precision Strength Co" 
+                    width="300" height="300">
+                <figcaption>
+                    Daniel Cross — Founder & Head Performance Coach
+                </figcaption>
+            </figure>
+
+            <p>
+                <strong>Daniel Cross</strong> founded PSC with a vision:
+                to create a training environment where structure, accountability,
+                and long-term progression replace trends and shortcuts.
+            </p>
+
+            <p>
+                With over 15 years of experience in strength development and athletic coaching,
+                Daniel has helped hundreds of individuals transform not only their bodies,
+                but their mindset toward discipline and resilience.
+            </p>
+
+            <p>
+                Learn more about our training philosophy on our 
+                <a href="index.html#menu">Plans page</a> 
+                or <a href="contact.html">contact us directly</a>.
+            </p>
+
+            <hr>
+
+            <h3>What We Specialize In</h3>
+
+            <ul>
+                <li>Strength and resistance training</li>
+                <li>Functional performance development</li>
+                <li>Mobility and balance improvement</li>
+                <li>Structured progression programs</li>
+                <li>Data-driven performance tracking</li>
+            </ul>
+
+            <p>
+                Every athlete — beginner or advanced — follows a system built around
+                progressive overload, recovery optimization, and technical mastery.
+            </p>
+
+            <hr>
+
+            <h3>Our Core Values</h3>
+
+            <ul>
+                <li><strong>Discipline:</strong> Consistency over motivation.</li>
+                <li><strong>Precision:</strong> Measured progress over guesswork.</li>
+                <li><strong>Integrity:</strong> Honest coaching and transparent guidance.</li>
+                <li><strong>Resilience:</strong> Mental and physical growth go together.</li>
+            </ul>
+
+            <hr>
+
+            <aside class="about__faq">
+                <h3>Frequently Asked Questions</h3>
+
+                <details>
+                    <summary>Do I need prior gym experience?</summary>
+                    <p class="about__faq-answer">
+                        Not at all. Our Starter Plan is designed specifically for beginners
+                        who want structured guidance and proper technique development.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Do you offer personalized coaching?</summary>
+                    <p>
+                        Yes. Our Performance and Elite plans include customized training
+                        programs with structured progress tracking.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Is nutrition guidance included?</summary>
+                    <p>
+                        Nutrition guidance is included in our Elite Plan and available
+                        as an add-on for other memberships.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Where are you located?</summary>
+                    <p>
+                        We are located in Dallas, Texas. Full address and contact details
+                        are available on our <a href="contact.html">Contact page</a>.
+                    </p>
+                </details>
+            </aside>
+            <hr>
+
+            <h3>External Resources</h3>
+
+            <p>
+                We base our methods on established strength principles and research from organizations such as:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.nsca.com/" target="_blank" rel="noopener">
+                        National Strength and Conditioning Association (NSCA)
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.acsm.org/" target="_blank" rel="noopener">
+                        American College of Sports Medicine (ACSM)
+                    </a>
+                </li>
+            </ul>
+
+            <hr>
+
+            <p>
+                More than a gym, <abbr title="Precision Strength Co">PSC</abbr> is a culture.
+                A place where individuals train with intention, push past limitations,
+                and build strength with precision.
+            </p>
+
+        </article>
+    </main>
+
+    <footer class="footer">
+        <hr>
+        <p>
+            <span class="nowrap">Copyright &copy; 2026</span>
+            <span class="nowrap">Precision Strength Co</span> 
+        </p>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            html.classList.add('dark-mode');
+            btn.textContent = '☀️';
+        }
+
+        btn.addEventListener('click', () => {
+            html.classList.toggle('dark-mode');
+            const isDark = html.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            btn.textContent = isDark ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

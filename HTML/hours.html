@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pedro Bonetti">
+    <meta name="description" content="Operating hours for Precision Strength Co. Train with discipline, any day of the week.">
+    <title>Operating Hours | Precision Strength Co</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header__h1">Precision Strength Co</h1>
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="hours.html" aria-current="page">Hours</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" title="Alternar Tema">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2 class="hero__h2">Operating Hours</h2>
+
+        <figure>
+            <img 
+                src="images/img_3.png" 
+                alt="Athlete training intensely with battle ropes"
+                title="Train With Discipline"
+                width="1000"
+                height="667"
+            >
+            <figcaption class="offset">
+                Consistency builds strength.
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <main class="main">
+
+        <article class="main__article hours">
+
+            <header class="hours__header">
+                <h2 class="hours__h2">Train When It Matters</h2>
+                <p class="hours__intro">
+                    We are open 7 days a week to support your discipline and performance goals.
+                    Strength is built through consistency — and consistency requires access.
+                </p>
+            </header>
+
+
+            <section class="hours__schedule">
+
+                <h3>Weekly Schedule</h3>
+
+                <table class="hours__table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Opening</th>
+                            <th scope="col">Closing</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Sunday – Thursday</th>
+                            <td><time datetime="11:00">11:00 AM</time></td>
+                            <td><time datetime="21:00">9:00 PM</time></td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Friday – Saturday</th>
+                            <td><time datetime="11:00">11:00 AM</time></td>
+                            <td><time datetime="23:00">11:00 PM</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+
+            <section class="hours__details">
+
+                <p>
+                    <strong>Peak Hours:</strong> 5:00 PM – 8:00 PM  
+                    For a quieter and more focused environment, we recommend morning or early afternoon sessions.
+                </p>
+
+                <p>
+                    Personal coaching sessions are available by appointment during operating hours.
+                    Elite members may request extended access depending on availability.
+                </p>
+
+                <p>
+                    For holiday schedules or special events, please contact our team in advance.
+                </p>
+
+            </section>
+
+
+            <p class="hours__closing">
+                Discipline doesn’t take days off — and neither do we.
+            </p>
+
+            <p class="center">
+                <a href="#">Back to Top</a>
+            </p>
+
+        </article>
+
+    </main>
+
+
+    <footer class="footer">
+        <hr>
+        <p>
+            <span class="nowrap">Copyright &copy; 2026</span>
+            <span class="nowrap">Precision Strength Co</span>
+        </p>
+    </footer>
+
+    <script>
+        const themeBtn = document.getElementById('theme-toggle');
+        const htmlDoc = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'dark') {
+            htmlDoc.classList.add('dark-mode');
+            themeBtn.textContent = '☀️';
+        }
+
+        themeBtn.addEventListener('click', () => {
+            htmlDoc.classList.toggle('dark-mode');
+            const isDark = htmlDoc.classList.contains('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            themeBtn.textContent = isDark ? '☀️' : '🌙';
+        });
+    </script>
+
+</body>
+</html>
